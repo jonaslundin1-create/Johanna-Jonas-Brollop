@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Johanna & Jonas | 13 februari 2027</title>
+
+<meta name="description"
+content="Information och OSA för Johanna Anskers och Jonas Lundins bröllop på Carlshälls Gård den 13 februari 2027.">
+
+<style>
+:root {
+  --forest: #203a32;
+  --deepforest: #152b25;
+  --sage: #718579;
+  --wine: #814d50;
+  --gold: #b38a50;
+  --champagne: #e4cfaa;
+  --cream: #f7f1e7;
+  --paper: #fffaf1;
+  --text: #2c302d;
+  --muted: #6b706c;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 68px;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background: var(--cream);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.7;
+}
+
+strong { color: var(--forest); }
+
+/* HERO */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(90deg,rgba(21,34,30,.32),rgba(21,34,30,.05),rgba(21,34,30,.20)),
+    url("hero-winter.jpg") center / cover no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,transparent 55%,rgba(18,32,27,.28));
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(690px,calc(100% - 40px));
+  margin-left: max(5vw,calc((100vw - 1300px)/2));
+  padding: 65px 60px;
+  text-align: center;
+  background: rgba(255,250,241,.91);
+  box-shadow: 0 25px 70px rgba(12,25,20,.22);
+  backdrop-filter: blur(6px);
+}
+
+.hero-content::before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid rgba(179,138,80,.55);
+  pointer-events: none;
+}
+
+.eyebrow {
+  margin: 0 0 22px;
+  color: var(--forest);
+  font-family: Arial,sans-serif;
+  font-size: 11px;
+  letter-spacing: .42em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  color: var(--forest);
+  font-size: clamp(45px,6vw,76px);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.ampersand {
+  display: block;
+  padding: 8px;
+  color: var(--gold);
+  font-size: .7em;
+  font-style: italic;
+}
+
+.hero-date {
+  margin: 30px 0 3px;
+  font-family: Arial
